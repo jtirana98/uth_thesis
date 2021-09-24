@@ -12,13 +12,13 @@ Requirements:
 <u> Cloud Side </u>
 
 Requiremets:
-- python 3.? 
+- python 3.8.10
 
 Entities:
 - Registry.py : without this entity the system fails to start its executions:
 ``` python.py Registry.py ```.
 - FTPServer.py : runs in the background and handles the Edge Server's FTP request during the "file space synchronitation".
-    - before execution the File_space/ directory should be already created. 
+    - before execution the space_file/ directory should be already created. 
  ``` python.py FTPServer.py ```.
  - LogServer.py : runs in the background, accepts Edge Server's messages through a TCP connection.
   ``` python.py LogServer.py ```.
@@ -42,5 +42,11 @@ Entities:
   * detectorTask.py: 
       - *requires the configuration files from demo_job/config. that belongs to [yolo-real-time-object-detection](https://pjreddie.com/darknet/yolo/)*
       - python modules:
-         - numpy..  
+        - sudo pip2 install numpy==1.15.0
+        - pip2 install opencv-python==4.2.0.32
+        - sudo apt-get install libglib2.0-0
+        - sudo apt-get install libSM.so.6
+        - sudo apt-get install -y libsm6 libxext6
+        - sudo apt-get install -y install -y libxrender-dev
+        - sudo apt-get install -y  libxrender-dev
   * aggreagatorTask.py
