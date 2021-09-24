@@ -49,4 +49,4 @@ Entities:
         - sudo apt-get install -y libsm6 libxext6
         - sudo apt-get install -y install -y libxrender-dev
         - sudo apt-get install -y  libxrender-dev
-  * aggreagatorTask.py
+   * aggreagatorTask.py
