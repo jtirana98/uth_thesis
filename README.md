@@ -50,3 +50,8 @@ Entities:
         - sudo apt-get install -y install -y libxrender-dev
         - sudo apt-get install -y  libxrender-dev
    * aggreagatorTask.py
+  
+  run command (supposing you have two zones: zoneA, zoneB): 
+  
+  
+  ``` run scannerTask.py@[zoneA<'uav1',37.9278579,23.6500001>;zoneB<'uav2',37.927858,23.661409901>] | detectorTask.py@[zoneA<'tmp','.'>;zoneB<'tmp','.'>] | aggregatorTask.py@[zoneA;zoneB]<'zoneA','zoneB'> ```
