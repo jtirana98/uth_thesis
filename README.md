@@ -41,7 +41,7 @@ Entities:
   * scannerTask.py drone task for scanning a rectangle
   * detectorTask.py: 
       - *requires the configuration files from demo_job/config. that belongs to [yolo-real-time-object-detection](https://pjreddie.com/darknet/yolo/)*
-      - python modules:
+      - python modules (for python 2):
         - sudo pip2 install numpy==1.15.0
         - pip2 install opencv-python==4.2.0.32
         - sudo apt-get install libglib2.0-0
