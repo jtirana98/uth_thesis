@@ -7,7 +7,7 @@ Requirements:
 - python 2.7
 
 *EdgeServer.py* : It is a TeCoLa mission program that runs the EdgeServer entity. To start a EdgeServer a unique id should be assigned:
- ``` python EdgeServer.py [-z|--zone zoneID] ```
+ ``` python EdgeServer.py -z|--zone [zoneID] ```
 
 <u> Cloud Side </u>
 
@@ -26,10 +26,21 @@ Entities:
   ``` python.py LogServer.py ```.
   
   <u> User - Commands </u>
-  
-  
+  > $ list [ \<zone-id\>| \* ]
+  > 
+  > $ reset  [ \<zone-id\>| \* ]
+  >
+  > $ kill
+  > 
+  > $ stat
+  >
+  > $ run \<edgeTask\>@[zone1<arg1,arg2,..>;..] | ... | \<managerTask\>@[zone1;..]<arg1,arg2..>
+
   <u> Demo Job </u>
-  In the demo_job directory, there is an example of pipeline of tasks:
-  * scannerTask.py:
-  * detectorTask.py:
-  * aggreagatorTask.py:
+  In the demo_job directory, there is an example of a pipeline of tasks:
+  * scannerTask.py drone task for scanning a rectangle
+  * detectorTask.py: 
+      - *requires the configuration files from demo_job/config. that belongs to [yolo-real-time-object-detection](https://pjreddie.com/darknet/yolo/)*
+      - python modules:
+         - numpy..  
+  * aggreagatorTask.py
